@@ -17,23 +17,27 @@ It should also figure out if there are any more letters that need to be guessed,
 and if not, it should congratulate the user for winning the game.
 Pretend you don't know the word, and call guessLetter multiple times with various
 letters to check that your program works.*/
-// hint: 在英文中，12個字母出現次數最多的是（由多至少排列）：e-t-a-o-i-n-s-h-r-d-l-u。
+
+
 
 var word = ['F','O','X'];
-var guessPool=[];
+var guessedLetter=['_', '_', '_'];
+var guessCollection = [];
 
-var guessLetter = function (guess){
+var guessLetter = function (letter){
 
     for (var i=0; i<word.length; i++){
-        if (guess === word[i]) {
-            guessPool.push(guess);
-            console.log ('the current guessed letters are '+ word[i]+' '+
-            'congratulations on founding a new letter')
-          };
+        if (letter === word[i]) {
+          guessedLetter[i]=letter;
 
-          /*if (guessPool.length ===word.length){
-          console.log ( 'well done! you have won the game')
-        };*/
-    }
+          }
+         guessCollection = guessedLetter;
 
-  }
+        }
+
+        console.log( guessCollection);
+        console.log ('you found a new letter!' )
+
+};
+
+guessLetter ('F');

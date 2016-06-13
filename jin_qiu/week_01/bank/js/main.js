@@ -31,47 +31,83 @@ Bonus
 Ensure that the accounts cannot have negative values.
 Write a 'transfer' on the bank that allows you to transfer amounts between two accounts.*/
 
- var bank = [
-
-   {owner: 'Jim',
+  var acc1= {owner: 'Jim',
     balance: 1000,
-   },
+   };
 
-   {owner: 'Kat',
-    balance:  565,
-   },
+  var acc2 = {owner: 'Kat',
+    balance:  2000,
+   };
 
-   {owner: 'Jake',
-    balance: 332,
-   }
- ]
+  var acc3 = {owner: 'Jake',
+    balance: 300,
+   };
+
+ var bank = [ acc1, acc2, acc3];
+
+ var updatedBank = [];
+ var currentbalance;
+
 
 
 var sum = function (){ //return the total sum of money in the accounts.
-
+	var currentbalance = 0;
     for ( var i = 0; i < bank.length; i++){
-    var currentbalance = 0;
     currentbalance += bank [i].balance;
   }
-  return currentbalance
-}
- sum ( )
+   return currentbalance;
+};
+
+sum ()
 
 
 
-var addAccount = function (name, amount ){ //enroll a new account and add it to the array of accounts, update balance
+var addAccount = function (name, amount ){ //add new account to the current array of accounts, update balance
     newAccount = {
         owner: 'name',
-        balance : amount
+        balance: amount
     };
-    
-    updatedbank = bank.push(newAccount);
-    console.log (updatedbank)
 
-    var sum = 0;
-    for (var i = 0; i < updatedbank.length; i++) {
-      sum += updatedbank[i].balance;
+    bank.push(newAccount);
+    console.log ( 'New account for ' + name + ' has been added to bank ');
+    console.log ( bank);
+
+
+   for (var i = 0; i < bank.length; i++) {
+      currentbalance += bank[i].balance;
     }
-    return sum;
+    return currentbalance;
 }
-addAccount(Lucy,2378)
+
+addAccount('Lucy',3000);
+
+
+var deposits =function ( AccName, amoount){
+    var mark = 0; // check if new account is present
+    for ( var i=0; i<bank.length; i++){
+      bank [i].balance +=amount;
+      mark = 1;
+      return //break the function;
+    }
+
+}
+
+if ( mark ===1) {
+    console.log ( 'credited to AccName + 'Amount ' + amount');
+    return mark;
+}else {
+  console.log ( ' no account with '+ AccName + ' found');
+  return mark;
+}
+}
+
+
+
+
+
+
+
+
+
+
+}
