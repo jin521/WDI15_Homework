@@ -15,6 +15,7 @@ Bonus #4: Pretty much go nuts or whatever.*/
 
 var img = document.getElementsByTagName('img')[0];
 img.style.position = 'absolute';
+img.style.height ='350px';
 img.style.left = '0px';
 img.style.top = '0px';
 var watchKittyWalk = function() {
@@ -23,7 +24,7 @@ var watchKittyWalk = function() {
   img.style.left = newLeft + 'px';
 
   var oldTop = parseInt(img.style.top);
-  var newTop = oldTop + 5;
+  var newTop = oldTop + 4;
   img.style.top = newTop + 'px';
 
 };
@@ -51,7 +52,7 @@ window.setInterval(watchKittyDance, 50);
 var imgreverse = document.getElementsByTagName('img')[2];
 imgreverse.style.position = 'absolute';
 imgreverse.style.top = '70px';
-imgreverse.style.height ='250px';
+imgreverse.style.height ='200px';
 imgreverse.style.right = '0px';
 var watchKittyDance = function() {
 
@@ -61,3 +62,21 @@ var watchKittyDance = function() {
 
 };
 window.setInterval(watchKittyDance, 70);
+
+
+
+
+var imgsmall = document.getElementsByTagName('img')[3];
+imgsmall.style.position = 'absolute';
+imgsmall.style.height ='150px';
+imgsmall.style.left = '0px';
+imgsmall.style.top = '300px';
+
+var watchKittyWalk = function() {
+  var oldLeft = parseInt(imgsmall.style.left);
+  var newLeft = oldLeft + 10;
+  imgsmall.style.left = newLeft + 'px';
+
+
+};
+window.setInterval(watchKittyWalk, 80);
