@@ -6,11 +6,17 @@
   margin: auto;
 
 
+
 }
 
+header {
+
+  background-image: url("/Users/qiujin/Projects/WDI15_Homework/jin_qiu/week_02/computerScientists/images/s.jpg");
+}
 h1 {
-  color: grey;
+  color: black;
   text-align:center;
+
 }
 
 h2 {
@@ -43,7 +49,8 @@ nav li {
 }
 
 nav a {
-  color:black;
+  color:white;
+  text-decoration: none;
 }
 
 article {
