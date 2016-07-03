@@ -1,0 +1,10 @@
+<h1><%= @uke['name'] %></h1>
+<h2>Family: <em><%= @uke['family'] %></em></h2>
+<h2>Size: <em><%= @uke['size'] %></em></h2>
+<img class = 'features' src="<%= @uke['image'] %>" >
+
+
+<div class="controls">
+  <a href="/uke/<%= @uke['id'] %>/edit">Edit</a>
+  <a href="/uke/<%= @uke['id'] %>/delete">Delete</a>
+</div>

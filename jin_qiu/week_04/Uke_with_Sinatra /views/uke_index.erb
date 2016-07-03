@@ -1,0 +1,6 @@
+
+<h1> ALL ukes </h1>
+
+<% @uke.each do |b| %>
+  <p><a href= '/uke/<%= b['id']%>'> <%= b['name'] %></a></p>
+<% end %>

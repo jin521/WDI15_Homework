@@ -1,0 +1,38 @@
+*{
+
+  font-size:15px;
+}
+
+
+body {
+    background-image: url("/images/Erin 2b.jpg");
+     background-repeat: no-repeat;
+     text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+body {
+  background-color: #6081A4;
+
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+nav {
+  text-align: right;
+}
+
+img.feature {
+    max-width: 40%;
+    border-radius: 0.5em;
+    display: block;
+    margin: 0 auto;
+}

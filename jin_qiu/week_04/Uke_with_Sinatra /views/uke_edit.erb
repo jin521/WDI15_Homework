@@ -1,0 +1,8 @@
+<h1>Edit Uke</h1>
+<form action="/uke/<%= @uke['id'] %>" method="post">
+  <input type="text" name="name" placeholder="Name" value="<%= @uke['name'] %>">
+  <input type="text" name="family" placeholder="Family" value="<%= @uke['family'] %>">
+  <input type="text" name="size" placeholder="Size" value="<%= @uke['size'] %>">
+  <input type="url" name="image" placeholder="Image" value="<%= @uke['image'] %>">
+  <button>Update Uke</button>
+</form>
