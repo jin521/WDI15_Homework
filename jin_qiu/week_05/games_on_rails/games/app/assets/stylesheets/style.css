@@ -1,0 +1,89 @@
+
+body {
+  background-color: #DB7093;
+  background-image: url('/Users/qiujin/Projects/WDI15_Homework/jin_qiu/week_05/games_on_rails/games/app/assets/stylesheets/style.css')
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+div{
+     padding: 300px 0;
+     /*border: 3px solid green;*/
+     text-align: center;
+}
+
+a {
+  color: #000;
+  text-decoration:none;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+
+
+
+
+  .styleit {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 18px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+
+
+    .style2 {
+      text-align: left;
+      font-weight: bold;
+      padding: 5px 5px 5px 15px;
+      font-size: 18px;
+      margin: -7px;
+      margin-bottom: 0px;
+      background-color: #DDA0DD;
+      color: #fff;
+    }
+
+
+
+button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+    background: -webkit-gradient(linear,center bottom,center top, color-stop(0%, 	#DDA0DD), color-stop(100%, #fff));
+    /*box-shadow: 0px 1px 8px #9370DB;*/
+    /*box-sizing: border-box;*/
+    /*background-color: 	;*/
+    color: black;
+    font-size: 15px;
+}
