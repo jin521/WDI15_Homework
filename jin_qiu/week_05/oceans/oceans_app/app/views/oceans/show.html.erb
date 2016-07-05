@@ -1,0 +1,14 @@
+
+<div>
+<h2><%= @ocean.name %></h2>
+<%= image_tag @ocean.image %>
+<ul>
+  <li>Area: <%= @ocean.area %></li>
+  <li>Depth: <%= @ocean.depth %></li>
+</ul>
+
+<!-- <div class="controls"> -->
+  <%= link_to 'Edit ocean', ocean_edit_path(@ocean.id) %>
+  <%= button_to 'Delete ocean', ocean_delete_path(@ocean.id) %>
+<!-- </div> -->
+</div>

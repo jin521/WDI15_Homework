@@ -1,0 +1,17 @@
+
+<div>
+
+<h1>  ♥ Plenty of Fish  ♥ </h1>
+
+<h4>Pick the ocean you want to swim in ☟ </h4>
+
+<br/>
+
+<br/>
+
+<% @oceans.each do |ocean| %>
+    <p><%= link_to ocean.name, ocean_path(ocean.id) %> </p>
+<% end %>
+
+
+</div>
