@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ body {
+   background-image: url('/assets/black.jpg');
+   background-size: cover;
+}
+
+.fancy{
+
+  font-family: 'Indie Flower', cursive;
+  /*font-family: 'Tangerine', serif;*/
+  text-shadow: 6px 6px 6px #aaa;
+  font-size: 20px;
+  color:white;
+
+}
+
+p {
+  color: white;
+}
+
+
+ .box1 {
+      margin-top: 300px;
+      text-align: center;
+
+ }
+
+
+ .box2 {
+      margin-top: 100px;
+      text-align: center;
+ }
+
+
+ .box3 {
+      margin-top: 200px;
+      text-decoration-color: white;
+ }
+
+
+ input{
+      border: none;
+      border-bottom: 2px solid white;
+      width: 100%;
+      background-color: #262626;
+      color:white;
+
+ }
+
+ button {
+    border-radius: 10em;
+    background-color: #DB7093;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
