@@ -39,7 +39,7 @@ $(document).ready(function() {
                var received_data = JSON.parse(xhr.responseText)
 
                  var poster = received_data["Poster"];
-                 $("#poster").attr("src", poster).fadeOut( "slow");
+                 $("#poster").attr("src", poster);
 
                var title = received_data["Title"];
                $("#movietitle").html(title)
