@@ -69,14 +69,15 @@ var calculateRoute = function (line, s, e){ //line is array
 
 var planTrip = function (sLine, sStation, eLine, eStation){
 
-      if (sLine ===eLine && sStation !==eStation){
+      if (sLine ===eLine && sStation ===eStation){
+          message = "you are already there.";
+        } else if (sLine ===eLine && sStation !==eStation){
 
           calculateRoute(startline, sStation, eStation);
           stops = _.size(trip);
 
           message = "☞ You must travel through the following stops on the Line "+  sLine+":" + trip + "," + stops + " stops in total."
-
-    }else {  //when sLine !==eLine, need to change line
+        } else {  //when sLine !==eLine, need to change line
           trip1 = calculateRoute(startline, sStation, "union square");
           trip2 = calculateRoute(endline, "union square", eStation);
           stops = _.size(trip1) + _.size(trip2);
