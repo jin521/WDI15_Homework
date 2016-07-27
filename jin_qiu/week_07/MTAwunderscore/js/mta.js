@@ -37,6 +37,13 @@ $('#start').on('change', function () {
 
 
 
+$('#start').on('click', function () {
+
+    $('#end').hide();
+ });
+ //debugger;
+
+
 $('#end').on('change', function () {
   var data = $(this).val();
   edata = data.split(':');
@@ -50,6 +57,7 @@ $('#end').on('change', function () {
   planTrip(sLine, sStation, eLine, eStation);
   console.log(message)
   $('#route').append(message);
+
 });
 
 
